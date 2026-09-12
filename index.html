@@ -103,23 +103,22 @@
 
   /* GALLERY GRID */
   .gallery{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:14px;
+    columns:2 340px;
+    column-gap:14px;
   }
   .gallery a{
     position:relative;overflow:hidden;
-    aspect-ratio:4/3;
     display:block;
+    margin-bottom:14px;
+    break-inside:avoid;
     background:#111;
   }
   .gallery img{
-    width:100%;height:100%;object-fit:cover;
-    object-position:center 20%;
+    width:100%;height:auto;
     display:block;
     transition:transform .5s ease;
   }
-  .gallery a:hover img{transform:scale(1.05);}
+  .gallery a:hover img{transform:scale(1.03);}
   .gallery a::after{
     content:'';position:absolute;inset:0;
     background:linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.55));
@@ -128,7 +127,7 @@
   .gallery a:hover::after{opacity:1;}
 
   @media (max-width:800px){
-    .gallery{grid-template-columns:1fr;gap:10px;}
+    .gallery{columns:1 340px;}
     .nav-links{display:none;}
   }
 
@@ -200,8 +199,6 @@
     </div>
     <div class="gallery">
       <a href="images/portraits/portrait_streetwear_blue.jpg" target="_blank"><img src="images/portraits/portrait_streetwear_blue.jpg" alt="Streetwear portrait"></a>
-      <a href="images/portraits/portrait_streetwear_bw.jpg" target="_blank"><img src="images/portraits/portrait_streetwear_bw.jpg" alt="Black and white streetwear portrait"></a>
-      <a href="images/portraits/portrait_streetwear_profile.jpg" target="_blank"><img src="images/portraits/portrait_streetwear_profile.jpg" alt="Streetwear profile portrait"></a>
       <a href="images/portraits/portrait_streetwear_bench.jpg" target="_blank"><img src="images/portraits/portrait_streetwear_bench.jpg" alt="Streetwear portrait on bench"></a>
       <a href="images/portraits/fitness_duo_gym.jpg" target="_blank"><img src="images/portraits/fitness_duo_gym.jpg" alt="Fitness portrait duo"></a>
       <a href="images/portraits/event_portrait_close.jpg" target="_blank"><img src="images/portraits/event_portrait_close.jpg" alt="Event portrait"></a>
@@ -222,10 +219,8 @@
       <a href="images/events/book_launch_display.jpg" target="_blank"><img src="images/events/book_launch_display.jpg" alt="Book launch table display"></a>
       <a href="images/events/church_worship_woman.jpg" target="_blank"><img src="images/events/church_worship_woman.jpg" alt="Church worship event"></a>
       <a href="images/events/conchas_girl_portrait.jpg" target="_blank"><img src="images/events/conchas_girl_portrait.jpg" alt="Community market event"></a>
-      <a href="images/events/frontera_bottle_hand.jpg" target="_blank"><img src="images/events/frontera_bottle_hand.jpg" alt="Frontera Wines Grammy Awards after party"></a>
       <a href="images/events/party_dj_stage.jpg" target="_blank"><img src="images/events/party_dj_stage.jpg" alt="Nightclub DJ stage event"></a>
       <a href="images/events/party_magician_cards.jpg" target="_blank"><img src="images/events/party_magician_cards.jpg" alt="Nightclub magician entertainment"></a>
-      <a href="images/events/party_group_toast.jpg" target="_blank"><img src="images/events/party_group_toast.jpg" alt="Nightclub group toast"></a>
     </div>
   </div>
 </section>
@@ -242,12 +237,8 @@
       <a href="images/product/frontera_shirt_lifedoesntwait.jpg" target="_blank"><img src="images/product/frontera_shirt_lifedoesntwait.jpg" alt="Frontera Wines branded merchandise"></a>
       <a href="images/product/candle_trio_outdoor.jpg" target="_blank"><img src="images/product/candle_trio_outdoor.jpg" alt="Candle product photography"></a>
       <a href="images/product/industrial_fadal_shop.jpg" target="_blank"><img src="images/product/industrial_fadal_shop.jpg" alt="Industrial shop floor"></a>
-      <a href="images/product/industrial_building_sign.jpg" target="_blank"><img src="images/product/industrial_building_sign.jpg" alt="Industrial client building"></a>
       <a href="images/product/wooden_box_open.jpg" target="_blank"><img src="images/product/wooden_box_open.jpg" alt="Wooden display case product shot"></a>
       <a href="images/product/wooden_boxes_three.jpg" target="_blank"><img src="images/product/wooden_boxes_three.jpg" alt="Wooden display cases"></a>
-      <a href="images/product/realestate_exterior.jpg" target="_blank"><img src="images/product/realestate_exterior.jpg" alt="Real estate exterior"></a>
-      <a href="images/product/realestate_bedroom.jpg" target="_blank"><img src="images/product/realestate_bedroom.jpg" alt="Real estate interior"></a>
-      <a href="images/product/drone_aerial_home.jpg" target="_blank"><img src="images/product/drone_aerial_home.jpg" alt="Drone aerial real estate"></a>
     </div>
   </div>
 </section>
